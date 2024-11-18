@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SingleNews = ({ singleNews }) => {
     const {
         title,
@@ -6,7 +8,11 @@ const SingleNews = ({ singleNews }) => {
         rating: { number },
         total_view,
         details,
+        _id,
     } = singleNews;
+
+
+    // console.log(singleNews);
 
     return (
         <div className="card bg-white shadow-lg rounded-lg p-4 mb-6">
@@ -36,9 +42,9 @@ const SingleNews = ({ singleNews }) => {
             {/* News Details */}
             <p className="text-gray-600 text-sm mt-4">
                 {details.substring(0, 150)}...{" "}
-                <span className="text-blue-500 font-semibold cursor-pointer">
+                <Link to={`/newsDetails/${_id}`} className="text-blue-500 font-semibold cursor-pointer">
                     Read More
-                </span>
+                </Link>
             </p>
 
             {/* Footer Section */}
