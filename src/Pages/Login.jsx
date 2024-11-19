@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
+import { AuthContext } from '../Provider/AuthProvider';
 
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    console.log(location);
+    // console.log(location);
 
 
     const handleFormSubmit = (e) => {
