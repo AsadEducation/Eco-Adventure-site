@@ -1,9 +1,21 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const AdventureDetails = () => {
     return (
         <div>
-            <h2 className="text-7xl text-center font-bold">Adventure Details</h2>
+            <header>
+                <Navbar></Navbar>
+            </header>
+
+            <main>
+
+            </main>
+            
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 };

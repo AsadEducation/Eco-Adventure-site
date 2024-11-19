@@ -6,7 +6,7 @@ const Navbar = () => {
     const { user, logoutUser } = useContext(AuthContext);
 
     const links = <div className='lg:flex space-x-5'>
-        <li><Link to={''}>Home</Link></li>
+        <li><Link to={'/'}>Home</Link></li>
         <li><Link to={''}>Profile</Link></li>
         <li><Link to={''}>Update</Link></li>
     </div>

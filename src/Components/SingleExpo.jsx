@@ -37,7 +37,7 @@ const SingleExpo = ({ card }) => {
                 <h2 className="text-lg font-bold text-gray-800">{title}</h2>
 
                 {/* Eco-Friendly Features */}
-                <p className="text-sm text-gray-600 mt-2">
+                <div className="text-sm text-gray-600 mt-2">
                     <h2 className="font-semibold">Eco-Friendly Features:</h2>
                     <div>
                         {
@@ -47,7 +47,7 @@ const SingleExpo = ({ card }) => {
                         }
                     </div>
 
-                </p>
+                </div>
 
                 {/* Button */}
                 <NavLink to={'/adventureDetails'}> <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 hover:px-6">
