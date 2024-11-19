@@ -9,7 +9,12 @@ const Routes = createBrowserRouter([
 
     {
       path:'',
-      element:<Home></Home>
+      element:<Home></Home>,
+      children:[
+        {
+          
+        },
+      ]
     },
     {
         path: 'auth',
@@ -24,6 +29,10 @@ const Routes = createBrowserRouter([
                 element: <Register></Register>
             }
         ]
+    },
+    {
+        path:'/adventureDetails',
+        
     },
     {
         path: "*",

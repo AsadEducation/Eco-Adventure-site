@@ -17,6 +17,7 @@ const Home = () => {
             <main>
                 {/* show different pages based on route  */}
                 <Outlet></Outlet>
+
             </main>
             <footer>
                 <Footer></Footer>
