@@ -4,6 +4,9 @@ import AuthLayout from "../Layout/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Home from "../Layout/Home"
+import Expo from "../Components/Expo";
+import AdventureDetails from "../Layout/AdventureDetails";
+import Private from "../Routes/Private"
 
 const Routes = createBrowserRouter([
 
@@ -12,7 +15,9 @@ const Routes = createBrowserRouter([
       element:<Home></Home>,
       children:[
         {
-          
+          path:'',
+          element:<Expo></Expo>,
+          loader:()=>fetch('/public/fakeData.json')
         },
       ]
     },
@@ -31,7 +36,8 @@ const Routes = createBrowserRouter([
         ]
     },
     {
-        path:'/adventureDetails',
+        path:'adventureDetails',
+        element:<Private><AdventureDetails/></Private>
         
     },
     {

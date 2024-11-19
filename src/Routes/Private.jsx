@@ -13,7 +13,7 @@ const Private = ({ children }) => {
     if (loading) {
         return (
             <div className="min-h-screen flex items-center justify-center">
-                <span className="loading loading-ring loading-lg"></span>
+                <span className="loading loading-ring text-blue-400 loading-lg"></span>
             </div>
         )
     }

@@ -2,7 +2,7 @@
     {
       "id": 1,
       "adventureTitle": "Rainforest Canopy Walk",
-      "image": "https://example.com/images/canopy-walk.jpg",
+      "image": "https://images.pexels.com/photos/238631/pexels-photo-238631.jpeg",
       "categoryName": "Trekking",
       "shortDescription": "Explore the lush rainforest canopy on suspended bridges.",
       "adventureCost": 75,
@@ -18,7 +18,7 @@
     {
       "id": 2,
       "adventureTitle": "Desert Stargazing Camp",
-      "image": "https://example.com/images/desert-camp.jpg",
+      "image": "https://images.pexels.com/photos/29445107/pexels-photo-29445107/free-photo-of-deserted-building-under-starry-sky-landscape.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Camping",
       "shortDescription": "Experience the tranquility of the desert under a starlit sky.",
       "adventureCost": 120,
@@ -34,7 +34,7 @@
     {
       "id": 3,
       "adventureTitle": "Kayaking in Mangroves",
-      "image": "https://example.com/images/kayaking.jpg",
+      "image": "https://images.pexels.com/photos/1761282/pexels-photo-1761282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Water Adventure",
       "shortDescription": "Navigate serene mangroves and discover unique wildlife.",
       "adventureCost": 50,
@@ -50,7 +50,7 @@
     {
       "id": 4,
       "adventureTitle": "Mountain Eco-Trek",
-      "image": "https://example.com/images/mountain-trek.jpg",
+      "image": "https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Hiking",
       "shortDescription": "Climb scenic trails while promoting sustainable tourism.",
       "adventureCost": 90,
@@ -66,7 +66,7 @@
     {
       "id": 5,
       "adventureTitle": "Eco-Snorkeling Safari",
-      "image": "https://example.com/images/snorkeling.jpg",
+      "image": "https://images.pexels.com/photos/982021/pexels-photo-982021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Snorkeling",
       "shortDescription": "Swim amidst vibrant coral reefs with an eco-focus.",
       "adventureCost": 70,
@@ -82,7 +82,7 @@
     {
       "id": 6,
       "adventureTitle": "Sustainable Cycling Tour",
-      "image": "https://example.com/images/cycling-tour.jpg",
+      "image": "https://images.pexels.com/photos/14313675/pexels-photo-14313675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Cycling",
       "shortDescription": "Pedal through scenic landscapes on a carbon-neutral journey.",
       "adventureCost": 45,
@@ -98,7 +98,7 @@
     {
       "id": 7,
       "adventureTitle": "Volcanic Hot Springs Retreat",
-      "image": "https://example.com/images/hot-springs.jpg",
+      "image": "https://images.pexels.com/photos/1687530/pexels-photo-1687530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Relaxation",
       "shortDescription": "Rejuvenate in natural geothermal springs amidst volcanic landscapes.",
       "adventureCost": 100,
@@ -114,7 +114,7 @@
     {
       "id": 8,
       "adventureTitle": "Eco-Safari Adventure",
-      "image": "https://example.com/images/safari.jpg",
+      "image": "https://images.pexels.com/photos/29469326/pexels-photo-29469326/free-photo-of-giraffe-in-mara-region-tanzania-wilderness.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Wildlife",
       "shortDescription": "Witness wildlife responsibly in an eco-friendly reserve.",
       "adventureCost": 150,
@@ -130,7 +130,7 @@
     {
       "id": 9,
       "adventureTitle": "Eco-Volunteering at Coral Farms",
-      "image": "https://example.com/images/coral-farms.jpg",
+      "image": "https://images.pexels.com/photos/3854025/pexels-photo-3854025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoryName": "Volunteering",
       "shortDescription": "Assist in coral restoration while learning about marine ecosystems.",
       "adventureCost": 50,
