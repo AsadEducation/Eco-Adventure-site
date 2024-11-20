@@ -33,7 +33,7 @@ const Routes = createBrowserRouter([
     },
     {
         path:'adventureDetails/:id',
-        element: <Private><AdventureProvider></AdventureProvider></Private>,      
+        element: <Private><AdventureProvider><AdventureDetails/></AdventureProvider></Private>,      
     },
     {
         path: "*",
