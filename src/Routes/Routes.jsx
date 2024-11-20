@@ -8,6 +8,8 @@ import Expo from "../Components/Expo";
 import AdventureDetails from "../Layout/AdventureDetails";
 import Private from "../Routes/Private"
 import AdventureProvider from "../Provider/AdventureProvider";
+import ErrorPage from "./ErrorPage";
+
 
 const Routes = createBrowserRouter([
 
@@ -31,11 +33,11 @@ const Routes = createBrowserRouter([
     },
     {
         path:'adventureDetails/:id',
-        element: <Private><AdventureProvider><AdventureDetails/></AdventureProvider></Private>,      
+        element: <Private><AdventureProvider></AdventureProvider></Private>,      
     },
     {
         path: "*",
-        element: <h1>Error</h1>
+        element: <ErrorPage></ErrorPage>
     }
 ])
 
