@@ -9,7 +9,7 @@ const AdventureProvider = ({children}) => {
 
 
     useEffect(()=>{
-        fetch('/public/fakeData.json')
+        fetch('fakeData.json')
         .then((result)=>result.json())
         .then((data)=>setAdventureCards(data))     
     },[])
