@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Navbar from '../Components/Navbar';
 import Banner from '../Components/Banner';
 import Footer from '../Components/Footer';
-import { Outlet } from 'react-router-dom';
+import Expo from '../Components/Expo';
+import AdventureProvider from '../Provider/AdventureProvider';
+
 
 const Home = () => {
+
     return (
         <div>
             <header>
@@ -16,7 +19,10 @@ const Home = () => {
             </header>
             <main>
                 {/* show different pages based on route  */}
-                <Outlet></Outlet>
+
+                <AdventureProvider>
+                    <Expo/>
+                </AdventureProvider>
 
             </main>
             <footer>

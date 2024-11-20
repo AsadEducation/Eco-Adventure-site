@@ -9,6 +9,8 @@ const Private = ({ children }) => {
 
     // console.log(pathname);
 
+    // console.log(loading);
+    
 
     if (loading) {
         return (

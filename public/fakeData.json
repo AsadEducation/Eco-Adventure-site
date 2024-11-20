@@ -14,7 +14,8 @@
       "includedItems": ["Safety Gear", "Guide", "Snacks"],
       "ecoFriendlyFeatures": ["Minimal Footprint Paths", "Biodegradable Gear"],
       "maxGroupSize": 12,
-      "specialInstructions": ["Wear comfortable shoes", "Carry a water bottle", "Avoid loud noises"]
+      "specialInstructions": ["Wear comfortable shoes", "Carry a water bottle", "Avoid loud noises"],
+      "story":"Beneath the emerald green canopy of the Amazon Rainforest, a thrilling adventure awaits. Suspended bridges stretch across treetops, offering a breathtaking view of nature’s untouched beauty. The Rainforest Canopy Walk invites explorers to immerse themselves in lush greenery and experience the symphony of wildlife echoing from below. As you step onto the bridge, the forest comes alive with chirping birds and rustling leaves. This adventure is not just about walking but embracing the delicate balance of life in the rainforest. It’s a journey of discovery, where every step deepens your connection with nature, leaving you in awe of its grandeur."
     },
     {
       "id": 2,
@@ -30,7 +31,8 @@
       "includedItems": ["Tent", "Meals", "Guide"],
       "ecoFriendlyFeatures": ["Solar-Powered Camps", "Plastic-Free Setup"],
       "maxGroupSize": 10,
-      "specialInstructions": ["Bring a warm jacket", "Avoid bright flashlights", "Stay within camp boundaries"]
+      "specialInstructions": ["Bring a warm jacket", "Avoid bright flashlights", "Stay within camp boundaries"],
+      "story":"Under the endless expanse of the Sahara Desert, a magical night unfolds. At the Desert Stargazing Camp, the sky becomes a canvas of glittering stars, unspoiled by city lights. The silence of the desert amplifies the beauty of the constellations, each one telling an ancient story. Cozy tents and warm meals create a sense of home amidst the vast wilderness. As you gaze upwards, you feel an unparalleled serenity, as if the stars themselves are whispering secrets of the universe. This is not just a camp; it’s a soulful journey under the celestial dome."
     },
     {
       "id": 3,
@@ -46,7 +48,8 @@
       "includedItems": ["Kayak", "Life Jacket", "Guide"],
       "ecoFriendlyFeatures": ["Non-Motorized Equipment", "Wildlife Conservation"],
       "maxGroupSize": 8,
-      "specialInstructions": ["Carry sunscreen", "Avoid disturbing wildlife", "Follow guide instructions"]
+      "specialInstructions": ["Carry sunscreen", "Avoid disturbing wildlife", "Follow guide instructions"],
+      "story":"Gliding through the serene waterways of the Andaman Islands, you find yourself surrounded by a mesmerizing labyrinth of mangroves. Kayaking in Mangroves offers an intimate encounter with unique wildlife and tranquil waters. Every paddle reveals hidden wonders – from vibrant kingfishers perched on branches to the gentle ripple of the current. It’s an adventure of harmony, where nature’s beauty and calmness create a perfect escape. As sunlight filters through the dense greenery, you realize this journey is more than exploration; it’s about preserving the magic of untouched ecosystems."
     },
     {
       "id": 4,
@@ -62,7 +65,8 @@
       "includedItems": ["Guide", "Lunch", "First Aid Kit"],
       "ecoFriendlyFeatures": ["Trail Restoration Projects", "Reusable Utensils"],
       "maxGroupSize": 6,
-      "specialInstructions": ["Prepare for altitude changes", "Pack light", "Respect wildlife"]
+      "specialInstructions": ["Prepare for altitude changes", "Pack light", "Respect wildlife"],
+       "story":" The rugged trails of the Rocky Mountains invite adventurers to embrace the challenge of the Mountain Eco-Trek. This journey weaves through breathtaking vistas and rolling landscapes, each step reminding you of the power and beauty of nature. With a focus on sustainability, every effort contributes to protecting these pristine trails. The crisp mountain air, the sight of soaring peaks, and the camaraderie of fellow trekkers create unforgettable memories. This trek isn’t just about reaching the summit – it’s about understanding our role in preserving the earth’s treasures for generations to come."
     },
     {
       "id": 5,
@@ -78,7 +82,8 @@
       "includedItems": ["Snorkeling Gear", "Instructor", "Refreshments"],
       "ecoFriendlyFeatures": ["Reef-Safe Sunscreen Provided", "No-Touch Policy"],
       "maxGroupSize": 15,
-      "specialInstructions": ["Do not touch corals", "Avoid plastic items", "Follow marine guidelines"]
+      "specialInstructions": ["Do not touch corals", "Avoid plastic items", "Follow marine guidelines"],
+      "story":"Dive into the vibrant underwater world of the Great Barrier Reef with the Eco-Snorkeling Safari. Colorful coral gardens stretch as far as the eye can see, home to a mesmerizing array of marine life. Each swim uncovers a new wonder – schools of fish darting in harmony and the gentle sway of coral beneath the waves. With a focus on eco-consciousness, the safari ensures minimal impact on this fragile ecosystem. This adventure is a celebration of life beneath the surface, leaving you inspired to protect the treasures of the sea."
     },
     {
       "id": 6,
@@ -94,7 +99,8 @@
       "includedItems": ["Bicycle", "Helmet", "Guide"],
       "ecoFriendlyFeatures": ["Carbon-Neutral Transport", "Eco Stops"],
       "maxGroupSize": 10,
-      "specialInstructions": ["Wear reflective clothing", "Follow cycling rules", "Stay hydrated"]
+      "specialInstructions": ["Wear reflective clothing", "Follow cycling rules", "Stay hydrated"],
+      "story":"In the picturesque streets of Amsterdam, the Sustainable Cycling Tour takes you on a journey like no other. Pedaling through scenic landscapes and charming canals, you’ll experience the joy of eco-friendly exploration. Every stop unveils a story, from quaint eco-conscious cafes to vibrant local markets. The rhythmic sound of the wheels and the fresh air invigorate your senses, reminding you of the beauty of a carbon-neutral adventure. This cycling journey is more than sightseeing; it’s a pledge to explore the world while preserving its essence, one pedal at a time."
     },
     {
       "id": 7,
@@ -110,7 +116,8 @@
       "includedItems": ["Towel", "Locker", "Refreshments"],
       "ecoFriendlyFeatures": ["Geothermal Heating", "Chemical-Free Pools"],
       "maxGroupSize": 20,
-      "specialInstructions": ["Avoid long soaks", "Shower before entering", "Respect pool limits"]
+      "specialInstructions": ["Avoid long soaks", "Shower before entering", "Respect pool limits"],
+      "story":"In the heart of Iceland's volcanic landscapes, the Volcanic Hot Springs Retreat offers a sanctuary of relaxation and rejuvenation. As you step into the steamy geothermal waters, the warmth envelops you, soothing every muscle. Surrounded by dramatic vistas, the springs feel like nature’s own spa, blending tranquility and beauty. The bubbling waters whisper tales of ancient volcanic activity, creating a connection to the earth’s raw power. This retreat is more than a getaway – it’s a harmonious blend of nature’s gifts and sustainable relaxation, leaving you refreshed and inspired."
     },
     {
       "id": 8,
@@ -126,7 +133,8 @@
       "includedItems": ["Binoculars", "Guide", "Lunch"],
       "ecoFriendlyFeatures": ["Solar-Powered Vehicles", "Animal Protection Policies"],
       "maxGroupSize": 6,
-      "specialInstructions": ["Avoid flash photography", "Do not feed animals", "Wear neutral clothing"]
+      "specialInstructions": ["Avoid flash photography", "Do not feed animals", "Wear neutral clothing"],
+      "story":"Amidst the golden plains of the Serengeti, the Eco-Safari Adventure unveils nature’s most awe-inspiring spectacle. From majestic lions to graceful giraffes, each moment feels like a page from a wildlife documentary. Guided by eco-conscious principles, the safari ensures every encounter respects the animals’ natural behavior. Solar-powered vehicles glide silently across the terrain, offering an up-close view without disturbance. It’s not just about seeing wildlife but understanding their role in the delicate balance of the ecosystem. This adventure inspires a deeper appreciation for the wild, leaving an indelible mark on your soul."
     },
     {
       "id": 9,
@@ -142,6 +150,7 @@
       "includedItems": ["Training Materials", "Lunch", "Snorkeling Gear"],
       "ecoFriendlyFeatures": ["Marine Conservation", "No Plastic Policy"],
       "maxGroupSize": 5,
-      "specialInstructions": ["Bring a notebook", "Avoid sunscreen", "Follow trainer guidance"]
+      "specialInstructions": ["Bring a notebook", "Avoid sunscreen", "Follow trainer guidance"],
+      "story":"Beneath the crystal-clear waters of Bali, Eco-Volunteering at Coral Farms offers a unique opportunity to make a difference. Here, you’ll work alongside marine biologists, planting coral fragments and learning about vibrant underwater ecosystems. As you dive into the azure depths, you witness the beauty of marine life, from colorful fish darting through the reefs to the gentle sway of sea anemones. Each action you take contributes to the restoration of coral habitats, ensuring their survival for generations to come. This adventure is more than a volunteering effort; it’s a heartfelt mission to give back to the ocean and protect its fragile wonders. "
     }
   ]

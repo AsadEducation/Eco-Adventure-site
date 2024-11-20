@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import { GoVerified } from "react-icons/go";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const SingleExpo = ({ card }) => {
     // console.log(card);
+
+    const {setLoading}= useContext(AuthContext);
 
     const {
         id,
@@ -49,8 +53,8 @@ const SingleExpo = ({ card }) => {
 
                 </div>
 
-                {/* Button */}
-                <NavLink to={'/adventureDetails'}> <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 hover:px-6">
+                {/*  onClick={()=>setLoading(true)} */}
+                <NavLink to={`/adventureDetails/${id}`}> <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 hover:px-6">
                     Explore Now
                 </button></NavLink>
             </div>

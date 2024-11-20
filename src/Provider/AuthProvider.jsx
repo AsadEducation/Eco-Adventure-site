@@ -14,7 +14,7 @@ const AuthProvider = ({ children }) => {
     }
 
     const loginUser = (email, password) => {
-        console.log('recieved ', email, password);
+        // console.log('recieved ', email, password);
         return signInWithEmailAndPassword(auth, email, password)
     }
 
@@ -23,7 +23,7 @@ const AuthProvider = ({ children }) => {
     }
 
     const profileUpdate = (info) => {
-        console.log(info);
+        // console.log(info);
         return updateProfile(auth.currentUser,info)
     }
 
@@ -47,6 +47,7 @@ const AuthProvider = ({ children }) => {
         logoutUser,
         loginUser,
         loading,
+        setLoading,
         profileUpdate,
     }
 

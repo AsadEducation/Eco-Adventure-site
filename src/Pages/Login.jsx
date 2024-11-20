@@ -9,9 +9,11 @@ const Login = () => {
     const [error, setError] = useState({});
 
     const location = useLocation();
+    // console.log(location);
+
+
     const navigate = useNavigate();
 
-    // console.log(location);
 
 
     const handleFormSubmit = (e) => {
@@ -25,7 +27,7 @@ const Login = () => {
         loginUser(email, password)
             .then((result) => {
                 // console.log('user logged in ' , result); 
-                navigate(location?.state ? location.state : '/');
+                navigate(location.state ? location.state : '/');
             })
             .catch((err) => {
                 // console.log(error.code, error.message)

@@ -37,11 +37,11 @@ const Register = () => {
                     photoURL: photo,
                 })
                     .then(() => {
-                        console.log('user profile updated')
+                        // console.log('user profile updated')
                         navigate("/");
                     })
                     .catch((err) => {
-                        console.log(err);
+                        // console.log(err);
                     });
 
                 // ...
@@ -49,7 +49,7 @@ const Register = () => {
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                console.log(errorCode, errorMessage);
+                // console.log(errorCode, errorMessage);
             });
 
     }

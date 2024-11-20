@@ -7,8 +7,8 @@ const Navbar = () => {
 
     const links = <div className='lg:flex space-x-5'>
         <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={''}>Profile</Link></li>
-        <li><Link to={''}>Update</Link></li>
+        <li><Link >Profile</Link></li>
+        <li><Link >Update</Link></li>
     </div>
     return (
         <div className='sticky top-0 z-50'>
