@@ -6,6 +6,7 @@ import Expo from '../Components/Expo';
 import AdventureProvider from '../Provider/AdventureProvider';
 import { useLocation } from 'react-router-dom';
 import PageTitle from '../Components/PageTitle';
+import Faq from '../ExtraSection/Faq';
 
 
 const Home = () => {
@@ -35,6 +36,8 @@ const Home = () => {
                 <AdventureProvider>
                     <Expo/>
                 </AdventureProvider>
+
+                <div className='my-8 md:my-16 lg:my-24'><Faq/></div>
 
             </main>
             <footer>
