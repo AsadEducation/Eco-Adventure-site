@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from '../Provider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -67,7 +67,7 @@ const Login = () => {
                         </label>
                         <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                         <label>
-                            <span className="text-sm text-red-500 underline">Forgot Password?</span>
+                            <NavLink to={'/auth/forgot'}><span className="text-sm text-red-500 underline">Forgot Password?</span></NavLink>
                         </label>
                     </div>
                     <div className="form-control mt-6">

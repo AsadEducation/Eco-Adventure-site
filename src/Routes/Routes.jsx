@@ -11,6 +11,7 @@ import AdventureProvider from "../Provider/AdventureProvider";
 import ErrorPage from "./ErrorPage";
 import Profile from "../Pages/Profile";
 import UProfile from "../Pages/UProfile";
+import ForgotPass from "../Pages/ForgotPass";
 
 
 const Routes = createBrowserRouter([
@@ -36,6 +37,10 @@ const Routes = createBrowserRouter([
             {
                 path: 'register',
                 element: <Register></Register>
+            },
+            {
+                path:'forgot',
+                element:<ForgotPass/>
             }
         ]
     },
