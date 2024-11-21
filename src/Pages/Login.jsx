@@ -29,6 +29,7 @@ const Login = () => {
 
         loginUser(email, password)
             .then((result) => {
+                // console.log('user logged in ' , result);
                 navigate(location.state ? location.state : '/');
             })
             .catch((err) => {

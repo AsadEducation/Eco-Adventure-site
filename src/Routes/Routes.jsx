@@ -9,6 +9,8 @@ import AdventureDetails from "../Layout/AdventureDetails";
 import Private from "../Routes/Private"
 import AdventureProvider from "../Provider/AdventureProvider";
 import ErrorPage from "./ErrorPage";
+import Profile from "../Pages/Profile";
+import UProfile from "../Pages/UProfile";
 
 
 const Routes = createBrowserRouter([
@@ -34,6 +36,14 @@ const Routes = createBrowserRouter([
     {
         path:'adventureDetails/:id',
         element: <Private><AdventureProvider><AdventureDetails/></AdventureProvider></Private>,      
+    },
+    {
+       path:'profile',
+       element:<Profile/>
+    },
+    {
+      path:'updateProfile',
+      element:<UProfile/>
     },
     {
         path: "*",
