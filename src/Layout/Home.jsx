@@ -7,6 +7,7 @@ import AdventureProvider from '../Provider/AdventureProvider';
 import { useLocation } from 'react-router-dom';
 import PageTitle from '../Components/PageTitle';
 import Faq from '../ExtraSection/Faq';
+import MapComponent from '../ExtraSection/MapComponent';
 
 
 const Home = () => {
@@ -38,6 +39,10 @@ const Home = () => {
                 </AdventureProvider>
 
                 <div className='my-8 md:my-16 lg:my-24'><Faq/></div>
+
+                {/* map component  */}
+                
+                <div><MapComponent/></div>
 
             </main>
             <footer>

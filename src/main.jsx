@@ -7,6 +7,8 @@ import AuthProvider, { AuthContext } from './Provider/AuthProvider.jsx'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { HelmetProvider } from 'react-helmet-async'
+//  this can cause problem 
+import 'leaflet/dist/leaflet.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
