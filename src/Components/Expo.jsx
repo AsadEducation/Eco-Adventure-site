@@ -16,7 +16,7 @@ const Expo = () => {
 
     return (
       <div className="mt-4 md:mt-8 lg:mt-16">
-         <h2 className="font-bold text-5xl text-center my-2 md:my-8 lg:my-16">Adventure Experiences </h2>
+         <h2 className="font-bold text-3xl lg:text-5xl text-center my-8 md:my-8 lg:my-16">Adventure Experiences </h2>
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {
                 cards.map((singleExpo)=>{

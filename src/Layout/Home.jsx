@@ -11,7 +11,7 @@ import PageTitle from '../Components/PageTitle';
 const Home = () => {
 
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     let path='';
 
@@ -24,12 +24,12 @@ const Home = () => {
            <PageTitle title={`Eco-Adventure||${path}`}/>
             <header>
                 {/* navbar */}
-                <Navbar></Navbar>
+               <div className='w-11/12 mx-auto'> <Navbar ></Navbar></div>
 
                 {/* banner  */}
                 <Banner></Banner>
             </header>
-            <main>
+            <main className='w-11/12 mx-auto'>
                 {/* show different pages based on route  */}
 
                 <AdventureProvider>

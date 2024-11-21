@@ -2,16 +2,53 @@ import React, { useContext } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 
+
 const Navbar = () => {
     const { user, logoutUser } = useContext(AuthContext);
 
-    const links = <div className='lg:flex space-x-5'>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/profile'} >Profile</Link></li>
-        <li><Link to={'/updateProfile'}>UpdateProfile</Link></li>
-    </div>
+   const links = (
+  <div className="lg:flex space-x-5 font-bold">
+    <li>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-blue-400 text-white font-bold" // Active styles
+            : "hover:bg-blue-400 text-gray-700" // Inactive styles
+        }
+      >
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/profile"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-blue-400 text-white font-bold" 
+            : "hover:bg-blue-400 text-gray-700"
+        }
+      >
+        Profile
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/updateProfile"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-blue-400 text-white font-bold" 
+            : "hover:bg-blue-400 text-gray-700"
+        }
+      >
+        UpdateProfile
+      </NavLink>
+    </li>
+  </div>
+);
+
     return (
-        <div className='sticky top-0 z-50'>
+        <div className='sticky top-0 z-50 '>
             <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -46,7 +83,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className="flex items-center navbar-end space-x-2 group">
+                <div className="flex items-center navbar-end space-x-4 group">
                     {
                         user?.photoURL ?
                             <div className='flex flex-row-reverse items-center gap-2'>
@@ -59,7 +96,7 @@ const Navbar = () => {
                     }
                     <div>
                         {
-                            user ? <button onClick={logoutUser} className="btn btn-neutral"> Logout</button> : <Link to={'/auth/login'} className="btn bg-blue-400 rounded-lg">Login</Link>
+                            user ? <button onClick={logoutUser} className="btn bg-blue-400 text-white rounded-lg"> Logout</button> : <Link to={'/auth/login'} className="btn bg-blue-400 text-white rounded-lg">Login</Link>
                         }
                     </div>
                 </div>
