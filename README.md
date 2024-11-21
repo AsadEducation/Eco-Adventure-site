@@ -7,7 +7,7 @@ The purpose of **Eco-Adventure** is to promote eco-friendly travel and raise awa
 
 ## Live URL
 You can check out the live version of the project here:  
-<a href="https://ecoadventureexpo32.surge.sh"></a>
+<a href="https://ecoadventureexpo32.surge.sh">Live Link</a>
 
 ## Key Features
 - **Explore Adventures**: Browse a variety of eco-friendly adventure packages.
