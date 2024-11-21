@@ -35,7 +35,7 @@ const MapComponent = () => {
   return (
     <div className='mb-4 md:mb-10 lg:mb-16'>
       <h2 className="text-3xl lg:text-4xl text-center mb-4 lg:mb-8 font-semibold">Location of Eco-Friendly Places</h2>
-      <p className='text-center text-gray-600'>Please Zoom in and out to see the location</p>
+      <p className='text-center text-gray-600'>Please click on location icon to see the location</p>
       <div className="map-container" style={{ height: "400px", width: "100%", marginTop: "20px" }}>
         <MapContainer center={[20, 0]} zoom={2} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>
           {/* Tile Layer for Map */}
