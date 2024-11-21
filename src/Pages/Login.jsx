@@ -4,6 +4,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FcGoogle } from "react-icons/fc";
+import PageTitle from "../Components/PageTitle";
 
 
 const Login = () => {
@@ -11,6 +12,7 @@ const Login = () => {
     const [error, setError] = useState({});
 
     const location = useLocation();
+    const path= location.pathname.split('/')
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -49,6 +51,7 @@ const Login = () => {
 
     return (
         <div className="mt-12 bg-white w-full md:w-[50%] mx-auto py-4 lg:p-12">
+            <PageTitle title={path[2]}></PageTitle>
             <h2 className="text-2xl font-bold text-center">Login Your Account</h2>
             <div className="card bg-base-100 shrink-0">
                 <form onSubmit={handleFormSubmit} className="card-body">

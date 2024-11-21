@@ -4,12 +4,24 @@ import Banner from '../Components/Banner';
 import Footer from '../Components/Footer';
 import Expo from '../Components/Expo';
 import AdventureProvider from '../Provider/AdventureProvider';
+import { useLocation } from 'react-router-dom';
+import PageTitle from '../Components/PageTitle';
 
 
 const Home = () => {
 
+    const location = useLocation();
+    console.log(location);
+
+    let path='';
+
+    if(location.pathname=='/'){
+      path='Home';
+    }
+
     return (
         <div>
+           <PageTitle title={`Eco-Adventure||${path}`}/>
             <header>
                 {/* navbar */}
                 <Navbar></Navbar>

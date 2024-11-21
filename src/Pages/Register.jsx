@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FcGoogle } from 'react-icons/fc';
+import PageTitle from '../Components/PageTitle';
 
 const Register = () => {
 
@@ -13,6 +14,8 @@ const Register = () => {
     const [error, setError] = useState({});
 
     const navigate = useNavigate();
+    const location = useLocation();
+    const path= location.pathname.split('/')
 
     //showing error with toast message 
 
@@ -103,6 +106,7 @@ const Register = () => {
 
     return (
         <div className="mt-12 bg-white  md:w-[50%] mx-auto py-4 lg:p-12">
+            <PageTitle title={path[2]}/>
             <h2 className="text-2xl font-bold text-center">Register Your Account</h2>
             <div className="card bg-base-100  shrink-0">
 

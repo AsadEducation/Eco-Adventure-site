@@ -8,7 +8,7 @@ const Navbar = () => {
     const links = <div className='lg:flex space-x-5'>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/profile'} >Profile</Link></li>
-        <li><Link to={'updateProfile'}>UpdateProfile</Link></li>
+        <li><Link to={'/updateProfile'}>UpdateProfile</Link></li>
     </div>
     return (
         <div className='sticky top-0 z-50'>
@@ -46,9 +46,16 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className="flex items-center navbar-end space-x-2">
+                <div className="flex items-center navbar-end space-x-2 group">
                     {
-                        user?.photoURL ? <div><img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" /></div> : <div><img src={''} alt="" /></div>
+                        user?.photoURL ?
+                            <div className='flex flex-row-reverse items-center gap-2'>
+                                <img className="w-10 h-10 rounded-full " src={user?.photoURL} alt="" />
+                                <p className='font-semibold  opacity-0 group-hover:opacity-100 transition-opacity duration-300'>{user?.displayName}</p>
+
+                            </div>
+                            :
+                            <div><img src={''} alt="" /></div>
                     }
                     <div>
                         {

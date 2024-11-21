@@ -3,11 +3,14 @@ import { AuthContext } from "../Provider/AuthProvider";
 import Spinner from "../Components/Spinner";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import PageTitle from "../Components/PageTitle";
 
 
 const Profile = () => {
     const { user } = useContext(AuthContext);
+    const location = useLocation();
+    const path= location.pathname.split('/');
 
 
     if (!user) {
@@ -26,6 +29,7 @@ const Profile = () => {
 
     return (
         <div>
+            <PageTitle title={path[1]}/>
             <header>
                 <Navbar></Navbar>
             </header>

@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { useLocation } from 'react-router-dom';
 import { AdventureContext } from '../Provider/AdventureProvider';
+import PageTitle from '../Components/PageTitle';
 
 const AdventureDetails = () => {
 
@@ -51,6 +52,7 @@ const AdventureDetails = () => {
 
     return (
         <div>
+            <PageTitle title={`${cardId[1]}||${cardId[2]}`}/>
             <header>
                 <Navbar></Navbar>
             </header>
