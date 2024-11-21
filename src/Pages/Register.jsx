@@ -146,7 +146,7 @@ const Register = () => {
                     {/* invalid password error show  */}
                     {
                         error.passwordValidity && <label className="label text-xs text-red-400">
-                            {error.passwordValidity}
+                            {`${error.passwordValidity}: Password should be 6 char long and contain at least a uppercase, a lowercase and a number`}
                         </label>
                     }
                     <div className="form-control mt-6">
