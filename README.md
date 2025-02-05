@@ -17,7 +17,7 @@ You can check out the live version of the project here:
 - 🔄 **Real-time Updates**: Keep track of available spots and upcoming adventures in real-time.
 - ♻️ **Eco-friendly Tips**: Learn about sustainable travel practices and eco-tourism benefits.
 
-## NPM Packages Used
+## Technologies Used
 - ⚛️ **React**: For building the user interface.
 - 🔗 **React Router DOM**: For routing and navigation within the application.
 - 🔑 **Firebase**: For user authentication (Google sign-in).
