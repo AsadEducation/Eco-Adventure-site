@@ -6,7 +6,7 @@ import Routes from './Routes/Routes.jsx'
 import AuthProvider, { AuthContext } from './Provider/AuthProvider.jsx'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { HelmetProvider } from 'react-helmet-async'
+import 'animate.css';
 //  this can cause problem 
 import 'leaflet/dist/leaflet.css';
 

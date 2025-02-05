@@ -6,6 +6,12 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
+// importing aos Animation package
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 // Fix the default marker icon
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -32,9 +38,19 @@ const tourismPlaces = [
 ];
 
 const MapComponent = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+      offset: 100,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className='mb-4 md:mb-10 lg:mb-16'>
-      <h2 className="text-3xl lg:text-4xl text-center mb-4 lg:mb-8 font-semibold">Location of Eco-Friendly Places</h2>
+    <div data-aos="fade-up" className='mb-4 md:mb-10 lg:mb-16'>
+      <h2 className="text-3xl lg:text-4xl text-center mb-4 lg:mb-8 animate-pulse font-semibold">Location of Eco-Friendly Places</h2>
       <p className='text-center text-gray-600'>Please click on location icon to see the location</p>
       <div className="map-container" style={{ height: "400px", width: "100%", marginTop: "20px" }}>
         <MapContainer center={[20, 0]} zoom={2} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }}>
@@ -51,7 +67,7 @@ const MapComponent = () => {
           ))}
         </MapContainer>
       </div>
-      
+
     </div>
   );
 };

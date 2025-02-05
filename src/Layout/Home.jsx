@@ -26,12 +26,15 @@ const Home = () => {
     return (
         <div>
             <PageTitle title={`Eco-Adventure||${path}`} />
+
+            {/* navbar */}
+            <div className=' rounded-lg fixed  top-0 z-50 mx-auto'> <Navbar ></Navbar></div>
+
             <header>
-                {/* navbar */}
-                <div className='w-11/12 mx-auto'> <Navbar ></Navbar></div>
 
                 {/* banner  */}
                 <Banner></Banner>
+
             </header>
             <main className='w-11/12 mx-auto'>
                 {/* show different pages based on route  */}
@@ -44,7 +47,7 @@ const Home = () => {
 
                 {/* map component  */}
 
-                  {/* this can cause error  */}
+                {/* this can cause error  */}
 
                 <Suspense fallback={<div>Loading map...</div>}>
                     <div><MapComponent /></div>

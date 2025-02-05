@@ -107,7 +107,7 @@ const Register = () => {
     return (
         <div className="mt-12 bg-white  md:w-[50%] mx-auto py-4 lg:p-12">
             <PageTitle title={path[2]}/>
-            <h2 className="text-2xl font-bold text-center">Register Your Account</h2>
+            <h2 className="text-2xl font-bold animate-pulse text-center">Register Your Account</h2>
             <div className="card bg-base-100  shrink-0">
 
                 <form onSubmit={handleFormSubmit} className="card-body">

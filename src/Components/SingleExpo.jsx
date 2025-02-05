@@ -28,7 +28,7 @@ const SingleExpo = ({ card }) => {
 
 
     return (
-        <div className="rounded-lg shadow-lg overflow-hidden border ">
+        <div className="rounded-lg shadow-lg overflow-hidden border hover:scale-110 ease-in duration-500 ">
             {/* Image */}
             <img
                 src={img}

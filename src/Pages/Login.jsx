@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FcGoogle } from "react-icons/fc";
 import PageTitle from "../Components/PageTitle";
-
+import 'animate.css'
 
 const Login = () => {
     const { user, logoutUser, loginUser,loginWithGoogle } = useContext(AuthContext);
@@ -50,9 +50,9 @@ const Login = () => {
     }
 
     return (
-        <div className="mt-12 bg-white w-full md:w-[50%] mx-auto py-4 lg:p-12">
+        <div className="mt-12 bg-white w-full md:w-[50%] mx-auto  py-4 lg:p-12">
             <PageTitle title={path[2]}></PageTitle>
-            <h2 className="text-2xl font-bold text-center">Login Your Account</h2>
+            <h2 className="text-2xl font-bold animate-pulse text-center">Login Your Account</h2>
             <div className="card bg-base-100 shrink-0">
                 <form onSubmit={handleFormSubmit} className="card-body">
                     <div className="form-control">

@@ -6,7 +6,25 @@ import { AdventureContext } from '../Provider/AdventureProvider';
 import PageTitle from '../Components/PageTitle';
 import moment from 'moment';
 
+// importing aos animation 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const AdventureDetails = () => {
+
+
+    // rendering animation 
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            once: false,
+            offset: 100,
+        });
+        AOS.refresh();
+    }, []);
+    
 
     const adventureCards = useContext(AdventureContext);
     // console.log(adventureCards);
@@ -88,7 +106,7 @@ const AdventureDetails = () => {
 
                     <div className="  my-8 md:my-12">
 
-                        <h1 className="text-3xl md:text-4xl  font-bold text-gray-700 text-center">
+                        <h1 className="text-3xl md:text-4xl font-bold text-gray-700 text-center">
                             {`${title} Experience`}
                         </h1>
 
@@ -98,12 +116,12 @@ const AdventureDetails = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className=" px-2 md:px-10 ">
+                    <div data-aos="fade-up" className=" px-2 md:px-10 ">
                         {/* Top Details */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                        <div className="grid grid-cols-1  md:grid-cols-2 gap-8 mb-10">
                             {/* Left Section */}
 
-                            <div className='bg-gray-100 p-2 md:p-6 rounded-lg shadow-md'>
+                            <div className='bg-gray-100 hover:scale-105  ease-in duration-500 p-2 md:p-6 rounded-lg shadow-md'>
                                 <h2 className="text-2xl font-bold mb-4">{category}</h2>
                                 <p className="text-lg text-gray-600 leading-7">
                                     {desc}
@@ -125,7 +143,7 @@ const AdventureDetails = () => {
                             </div>
 
                             {/* Right Section */}
-                            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+                            <div className="bg-gray-100 hover:scale-105 ease-in duration-500 p-6 rounded-lg shadow-md">
                                 <h3 className="text-xl font-bold mb-4">
                                     Eco-Friendly Features
                                 </h3>
@@ -154,7 +172,7 @@ const AdventureDetails = () => {
 
 
 
-                        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 bg-gray-100 p-2 md:p-6 rounded-lg shadow-md">
+                        <div className="mt-10  grid grid-cols-1 gap-6 md:grid-cols-2 bg-gray-100 p-2 md:p-6 rounded-lg shadow-md">
                             {/* Special Instructions */}
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-800 mb-4">

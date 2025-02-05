@@ -1,10 +1,25 @@
-import React from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 const Faq = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            once: false,
+            offset: 100,
+        });
+        AOS.refresh();
+    }, []);
+    
+
     return (
-        <section className="dark:bg-gray-100 rounded-lg dark:text-gray-800">
+        <section data-aos="fade-up" className="dark:bg-gray-100 rounded-lg  dark:text-gray-800">
             <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-                <h2 className="text-2xl font-semibold sm:text-4xl text-center">Frequently Asked Questions</h2>
+                <h2 className="text-2xl font-semibold sm:text-4xl animate-pulse text-center">Frequently Asked Questions</h2>
                 <p className="mt-4 mb-8 text-center dark:text-gray-600">
                     Explore answers to the most common questions about our Sustainable Cycling Tour and eco-adventure services.
                 </p>
@@ -57,3 +72,7 @@ const Faq = () => {
 };
 
 export default Faq;
+
+
+
+
